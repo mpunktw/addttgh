@@ -17,12 +17,14 @@ public class Add {
       s1 = Integer.parseInt(s1String);
     }
     catch (NumberFormatException e) {
+      System.err.println("Summand 1 wurde mit 0 belegt!");
       s1 = 0;
     }
     
     System.out.print("S2   : ");
     s2String = sc.next();
     try {
+      System.err.println("Summand 2 wurde mit 0 belegt!");
       s2 = Integer.parseInt(s2String);
     }
     catch (NumberFormatException e) {
